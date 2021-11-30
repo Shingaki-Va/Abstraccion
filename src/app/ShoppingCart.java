@@ -97,7 +97,7 @@ public class ShoppingCart {
             }
 
             for (Product product : productsList) {
-                System.out.println("-" + product.getName() + " $" + product.getPrice() + " (" + product.getQuantity() + "u) | total $" + product.getQuantity() * product.getPrice());
+                System.out.println(product.toString());
                 totalQuantity += product.getQuantity();
             }
 
@@ -137,7 +137,7 @@ public class ShoppingCart {
             totalQuantity += product.getQuantity();
         }
         float totalAmount = parcialAmount - sumOfDiscount;
-        System.out.printf("*Productos %d unidades\nSubTotal:     $%.2f \nDescuentos:   $%.2f \nTotal:        $%.2f", totalQuantity, parcialAmount, sumOfDiscount, totalAmount);
+        System.out.printf("*Productos %d unidades\nSubTotal:     $%.2f \nDescuentos:   $%.2f \nTotal:        $%.2f\n--------------------------------------", totalQuantity, parcialAmount, sumOfDiscount, totalAmount);
         switch (opc) {
 
             case 1:

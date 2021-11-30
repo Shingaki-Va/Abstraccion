@@ -11,10 +11,6 @@ public class Tool extends Product {
     }
 
     //GETTER AND SETTERS
-    public boolean getPayWithCC() {
-        return payWithCC;
-    }
-
     public void setPayWithCC(boolean payWithCC) {
         this.payWithCC = payWithCC;
     }

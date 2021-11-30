@@ -139,7 +139,7 @@ public class Stock {
         int opc = sc.nextInt();
         while (opc < 1 || opc > 3) {
             System.out.println("\nopción invalida\n1.Martillo $800 \n2.Pinza $900 \n3.Serrucho $1200");
-            System.out.print("opcoón: ");
+            System.out.print("opción: ");
             opc = sc.nextInt();
         }
         System.out.println("");
@@ -175,6 +175,7 @@ public class Stock {
         System.out.println("\n1.Milanesa $800\n2.Pizza $900 \n3.Arroz $100");
         System.out.print("Opción: ");
         int opc = sc.nextInt();
+
         while (opc < 1 || opc > 3) {
             System.out.println("\nopción invalida\n1.Milanesa $800\n2.Pizza $900 \n3.Arroz $100");
             System.out.print("opción: ");
@@ -215,7 +216,7 @@ public class Stock {
         int opc = sc.nextInt();
         while (opc < 1 || opc > 3) {
             System.out.println("opción invalida\n1.Auto $100 \n2.Barbie $1000\n3.Transformer $2000");
-            System.out.print("opcoón: ");
+            System.out.print("opción: ");
             opc = sc.nextInt();
         }
         System.out.println("");
@@ -240,7 +241,7 @@ public class Stock {
                 System.out.println("Se agregó " + toy.getName() + " a su carrito!");
                 break;
             default:
-                System.out.println("opcion inválida");
+                System.out.println("opción inválida");
         }
         return toy;
     }

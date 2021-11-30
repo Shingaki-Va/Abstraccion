@@ -6,7 +6,7 @@ public abstract class Product {
     private float discount;
     private float price;
     private String name;
-    private int Quantity;
+    private int quantity;
 
     //CONSTRUCTOR
     public Product() {
@@ -38,17 +38,20 @@ public abstract class Product {
     }
 
     public int getQuantity() {
-        return Quantity;
+        return quantity;
     }
 
     public void setQuantity(int quantity) {
-        Quantity = quantity;
+        this.quantity = quantity;
     }
 
     //ABSTRACT METHOD
     public abstract void CalculateDiscount();
 
-
+    @Override
+    public String toString() {
+        return "-" + name + " $" + price + " (" + quantity + "u) | total $" + quantity * price ;
+    }
 }
 
 
